@@ -3088,16 +3088,24 @@ var PopularActions = map[string]*ActionMetadata{
 	"softprops/action-gh-release@v1": {
 		Name: "GH Release",
 		Inputs: map[string]*ActionMetadataInput{
-			"body":       {},
-			"body_path":  {},
-			"draft":      {},
-			"files":      {},
-			"name":       {},
-			"prerelease": {},
-			"tag_name":   {},
+			"body":                    {},
+			"body_path":               {},
+			"draft":                   {},
+			"fail_on_unmatched_files": {},
+			"files":                   {},
+			"name":                    {},
+			"prerelease":              {},
+			"repository":              {},
+			"tag_name":                {},
+			"target_commitish":        {},
+			"token": {
+				Default: &popularActionDefaultValue3,
+			},
 		},
 		Outputs: map[string]struct{}{
-			"url": {},
+			"id":         {},
+			"upload_url": {},
+			"url":        {},
 		},
 	},
 	"subosito/flutter-action@v1": {
